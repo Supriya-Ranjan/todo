@@ -1,0 +1,25 @@
+<nav>
+  <h1>{{ title }}</h1>
+</nav>
+
+<div id="main">
+  <div id="container">
+    <div id="addtask">
+      <div class="row">
+        <input type="text" placeholder="Enter Your Task" #task />
+      </div>
+      <div class="row">
+        <button (click)="addTask(task.value)">Add Task</button>
+      </div>
+    </div>
+
+  <div id="list">
+    <ul *ngFor="let item of list">
+      <li> <div> <i class="ri-pushpin-fill"></i>
+        {{ item.name }}</div>
+        <i id="delete" (click)="removeTask(item.id)" class="ri-delete-bin-fill"></i>
+      </li>
+    </ul>
+  </div>
+</div>
+</div>

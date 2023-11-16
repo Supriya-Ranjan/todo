@@ -1,0 +1,118 @@
+/* font-family: 'Nunito', sans-serif;
+font-family: 'Yanone Kaffeesatz', sans-serif; */
+
+nav {
+    background-color: rgba(115, 22, 82, 0.916);
+    padding: 1px;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+nav h1{
+    text-align: center;
+    font-size: 45px;
+    margin: 15px;
+    padding: 10px;
+    color: rgb(255, 0, 195);
+}
+
+#main{
+    margin: 60px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+#main #container #addtask{
+    max-width: 500px;
+    width: 100%;
+    padding: 0 20px;
+    margin: 10px 27%;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
+    border-radius: 7px;
+    background-color: rgb(169, 234, 39);
+}
+
+#main #container #addtask .row{
+    width: 100%;
+}
+
+
+#main #container #addtask .row input{
+    width: 100%;
+    margin: 30px -2.5px;
+    border-radius: 5px;
+    background-color: rgba(236, 178, 223, 0.441);
+    border: 1px solid rgb(208, 53, 53);
+    font-size: 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+#main #container #addtask .row input:focus{
+    border-color:  rgba(233, 120, 206, 0.441);
+    box-shadow: inset 0px 0px 2px 2px rgba(26,188,156,0.25);
+  }
+#main #container #addtask .row input::placeholder{
+    color: rgba(33, 82, 30, 0.749);
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-style: normal;
+  }
+
+#main #container #addtask .row button{
+    height: 100%;
+    width: 30%;
+    padding: 10px;
+    margin-bottom: 30px;
+    margin-left: 35%;
+    border-radius: 5px;
+    background-color: rgb(242, 22, 124);
+    border: 1px solid rgb(208, 53, 53);
+    font-size: 25px;
+    color: rgba(10, 31, 8, 0.916);
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-style: normal;
+    cursor: pointer;
+}
+
+#main #container #addtask .row button:hover{
+    background-color: rgba(10, 31, 8, 0.916);
+    color: rgb(242, 22, 124);
+}
+
+#main #container #list {
+    width: 77vw;
+    padding: 0px 20px;
+    margin: 6% 10%;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
+    border-radius: 7px;
+    background-color: yellowgreen;
+}
+
+#main #container #list li{
+    padding-top: 4px;
+    height: 5vh;
+    font-size: 28px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#main #container #list #delete{
+    color: rgb(129, 5, 63);
+    font-size: 22px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
